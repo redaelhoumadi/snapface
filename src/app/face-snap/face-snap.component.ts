@@ -12,20 +12,12 @@ import { FaceSnap } from '../models/face-snap';
 export class FaceSnapComponent  implements OnInit {
 @Input() faceSnap!: FaceSnap;
 
-title!: string;
-description!: string;
-createdAt!: Date;
-snaps!: number;
-imageUrl!: string;
+
 snapButtonText!: string;
 userHasSnapped!: boolean;
 
 ngOnInit(): void {
-  this.title ='Archibald';
-  this.description = 'Mon meilleure ami depuis toujours !  ';
-  this.createdAt = new Date();
-  this.snaps = 0;
-  this.imageUrl = 'https://cdn.futura-sciences.com/sources/images/AI-creation.jpg';
+
   this.snapButtonText = 'Oh Snap !!';
 }
 onSnaps(): void {

@@ -13,6 +13,7 @@ import { FaceSnap } from './models/face-snap';
 })
 export class AppComponent implements OnInit {
   mySnap!: FaceSnap;
+  newSnap!: FaceSnap;
 
   ngOnInit() {
     this.mySnap = new FaceSnap(
@@ -21,6 +22,14 @@ export class AppComponent implements OnInit {
       'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
       new Date(),
       10
+    );
+
+    this.newSnap = new FaceSnap(
+      'Molik',
+      'Un homme chercher par lui !',
+      'https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png',
+      new Date(),
+      30
     );
   }
 }
