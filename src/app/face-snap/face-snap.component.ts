@@ -8,11 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './face-snap.component.scss'
 })
 export class FaceSnapComponent  implements OnInit {
-title!: string;
-description!: string;
-createdAt!: Date;
-snaps!: number;
-imageUrl!: string;
+
 snapButtonText!: string;
 userHasSnapped!: boolean;
 
